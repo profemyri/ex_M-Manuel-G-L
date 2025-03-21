@@ -2,32 +2,75 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Freiduria online</title>
+    <title>Freiduría online</title>
     <link rel="stylesheet" href="ex_html-css-js.css">
 </head>
-
-<body>
-    <h1>¡¡Pide aqui tu rico pescaito!!</h1>
+<h2>
+    <h1>¡¡Pide aquí tu rico pescaíto!!</h1>
     <script src="ex_html-css-js.js"></script>
-    <img src="pescado_frito.jpg" alt="pescado frito">
+    <img src="pescado_frito.jpg" alt="Bandeja pescado frito">
+    
     <form>
         <h2>Datos del Cliente</h2>
-        <ul>
-            <input type="text" id="name" placeholder="Nombre" width="10" required><pre></pre>
-            <input type="text" id="apellido" placeholder="Apellidos" width="10" required><pre></pre>
-            <input type="text" id="direccion" minlength="18" placeholder="Dirección" width="10" required><pre></pre>
-            <input type="number" id="telefono" placeholder="Teléfono" width="10" required><pre></pre>
-            <input type="time" id="Hora" placeholder="Hora Aproximada de Entrega" width="10" required><pre></pre>
-        </ul>
-        <br>
-        <h2>Pedido Pescado</h2>
-        <ul>
-            <ul>
-                <h3>Tipo de pescado</h3>
-                Calamares: <input type="radio" id="Calamares" placeholder="Nombre"><pre></pre>
-                Adobo: <input type="radio" id="Adobo" placeholder="Apellidos"><pre></pre>
-                Boquerones: <input type="radio" id="Boquerones" placeholder="Dirección"><pre></pre>
-            </ul>
-           
-        </ul>
+            <p>Nombre:</p>
+            <input type="text" id="nombre" name="nombre" required>
+            <pre></pre>
+            <p>Apellidos:</p>
+            <input type="text" id="apellidos" name="apellidos" required>
+            <pre></pre>
+            <p>Direccion:</p>
+            <input type="text" id="direccion" name="direccion" minlength="18" required>
+            <pre></pre>
+            <p>Telefono:</p>
+            <input type="tel" id="telefono" name="telefono" minlength="9" required>
+            <pre></pre>
+            <p>Hora Aproximada de Entrega:</p>
+            <input type="time" id="hora" name="hora" required>
+        
+        <h2>Pedido de pescado</h2>
+            <h3>Tipo de Pescado</h3>
+            <select id="tipo_pescado" name="tipo_pescado" required>
+                <option value="Calamares">Calamares</option>
+                <option value="Adobo">Adobo</option>
+                <option value="Boquerones">Boquerones</option>
+            </select>
+            
+            <br>
+
+            <h3>Raciones</h3>
+            <select id="raciones" name="raciones" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <h3>Acompañamiento</h3>
+            <input type="checkbox" id="patatas" name="acompanamiento" value="patatas"> Patatas Fritas (4€)
+            <br>
+            <input type="checkbox" id="ensaladilla" name="acompanamiento" value="ensaladilla"> Ensaladilla (4€)
+            <br>
+            <input type="checkbox" id="manzanilla" name="acompanamiento" value="manzanilla"> Botella de Manzanilla (4€)
+            <br>
+        
+        <h2>Método de pago</h2>
+            <input type="radio" id="efectivo" name="pago" value="efectivo" required> Efectivoabout:blank#blocked
+            <br>
+            <input type="radio" id="tarjeta" name="pago" value="tarjeta" required> Tarjeta
+            <br>
+            <input type="radio" id="paypal" name="pago" value="paypal" required> PayPal
+        
+        <h2>Instrucciones adicionales</h2>
+            <input	type="text" id="instrucciones" name="instrucciones" placeholder="Escribe tus preferencias..." maxlength="150">
+            <pre></pre>
+        
+        <button type="submit">Enviar Pedido</button>
+
+            <pre></pre>
+
+        <footer>Manuel Gil Llovet</footer>
+    </form>
+</body>
+</html>
 
