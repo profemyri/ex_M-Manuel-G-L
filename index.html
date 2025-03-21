@@ -10,7 +10,7 @@
     <script src="ex_html-css-js.js"></script>
     <img src="pescado_frito.jpg" alt="Bandeja pescado frito">
     
-    <form>
+    <form id="formulario">
         <h2>Datos del Cliente</h2>
             <p>Nombre:</p>
             <input type="text" id="nombre" name="nombre" required>
@@ -55,7 +55,7 @@
             <br>
         
         <h2>Método de pago</h2>
-            <input type="radio" id="efectivo" name="pago" value="efectivo" required> Efectivoabout:blank#blocked
+            <input type="radio" id="efectivo" name="pago" value="efectivo" required> Efectivo
             <br>
             <input type="radio" id="tarjeta" name="pago" value="tarjeta" required> Tarjeta
             <br>
@@ -65,7 +65,7 @@
             <textarea type="text" id="instrucciones" name="instrucciones" placeholder="Escribe tus preferencias..." maxlength="150"></textarea>
             <pre></pre>
         
-        <button type="submit">Enviar Pedido</button>
+        <button type="submit" id="BotonEnviar">Enviar Pedido</button>
 
             <pre></pre>
 
