@@ -1,13 +1,48 @@
 body {
-   ...........
+   background-color: #faf3e0;
+   color: #2c3e50;
+   font-family: Arial, sans-serif;
+   width: 800px;
+   margin: auto;
 }
 
 h1 {
-   ...........
+   font-size: 32px;
+   color: #0077b6;
+   text-align: center;
+}
+
+h2 {
+   font-size: 24px;
+   color: #f4a261;
+}
+
+img {
+   max-width: 100%;
+   text-align: center;
 }
 
 form {
-   ...........
+   background-color: #ffffff;
 }
 
-............
+input, select, textarea {
+   border: 1px solid #eaeaea;
+}
+
+.instrucciones {
+   color: #f4a261;
+}
+
+button {
+   background-color: #0077b6;
+   color: white;
+   text-align: center;
+   width: 95%;
+}
+
+* {
+   margin: 15px;
+   padding: 10px;
+   border-radius: 10px;
+}
